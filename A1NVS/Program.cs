@@ -10,13 +10,16 @@ namespace A1NVS
         static void Main(string[] args)
         {
            if (args.Length == 0)
-            {
+           {
                 RandomNumber rn = new RandomNumber();
                 for(int i = 0; i < 20; i++)
                 {
                     Numbers.Add(rn.RandomInt(0, 100));                     
                 }
-            }             
+           }
+           Menu.VypisMenu();
+           Console.ReadKey();
+             
         }
     }
 }
