@@ -1,23 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-
-namespace A1NVS
+namespace A1NVSnoncore
 {
     class Program
     {
         public static List<int> Numbers = new List<int>();
-        
+
         static void Main(string[] args)
         {
-            
+
             if (args.Length == 0)
             {
                 RandomNumber rn = new RandomNumber();
-                for(int i = 0; i < 20; i++)
+                for (int i = 0; i < 20; i++)
                 {
-                    Numbers.Add(rn.RandomInt(0, 100));                     
+                    Numbers.Add(rn.RandomInt(0, 100));
                 }
             }
             else if (!(int.TryParse(args[0], out int yeff)))
@@ -45,9 +46,11 @@ namespace A1NVS
                     Numbers.Add(Convert.ToInt32(stringNumber));
                 }
             }
-           Menu.VypisMenu();
-           Console.ReadKey();
-             
+
+
+            Menu.VypisMenu();
+            Console.ReadKey();
+
         }
     }
 }
