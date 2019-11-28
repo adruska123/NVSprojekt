@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-//TEST
+
 
 namespace A1NVS
 {
@@ -27,8 +27,6 @@ namespace A1NVS
                     Numbers.Add(Convert.ToInt32(stringNumber));
                 }
             }
-
-
            Menu.VypisMenu();
            Console.ReadKey();
              

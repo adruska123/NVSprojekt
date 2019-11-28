@@ -27,7 +27,6 @@ namespace A1NVS
             byte[] randomBytes = new byte[8];
             rn.GetBytes(randomBytes);
             int generatedValue = Math.Abs(BitConverter.ToInt32(randomBytes, startIndex: 0));
-
             int diff = max - min;
             int mod = generatedValue % diff;
             int normalizeNumber = min + mod;
