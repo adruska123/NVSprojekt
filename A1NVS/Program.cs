@@ -19,6 +19,16 @@ namespace A1NVS
                     Numbers.Add(rn.RandomInt(0, 100));                     
                 }
            }
+            else
+            {
+                for (int i = 0; i < args.Length; i++)
+                {
+                    string stringNumber = args[i];
+                    Numbers.Add(Convert.ToInt32(stringNumber));
+                }
+            }
+
+
            Menu.VypisMenu();
            Console.ReadKey();
              
