@@ -25,6 +25,7 @@ namespace A1NVSnoncore
                     NajvacsieCislo();
                     break;
                 case 3:
+                    PrvyAlgo();
                     break;
                 case 4:
                     break;
@@ -59,6 +60,25 @@ namespace A1NVSnoncore
                 }
             }
             Console.WriteLine("Najvacsi prvok je " + NajvacsieCislo + " s poziciou " + Index);
+        }
+        private static void PrvyAlgo()
+        {   
+            for(int i = 0; i < Program.Numbers.Count - 1; i++)
+            {
+                for(int j = 0; j < Program.Numbers.Count - i - 1; j++)
+                {
+                    if(Program.Numbers[j] > Program.Numbers[j + 1])
+                    {
+                        int temp = Program.Numbers[j];
+                        Program.Numbers[j] = Program.Numbers[j + 1];
+                        Program.Numbers[j + 1] = temp;
+                    }
+                }
+            }
+            for(int i = 0; i < Program.Numbers.Count; i++)
+            {
+                Console.Write(Program.Numbers[i] + " ");
+            }
         }
     }
 }
