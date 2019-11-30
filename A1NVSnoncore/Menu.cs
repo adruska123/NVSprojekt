@@ -33,6 +33,9 @@ namespace A1NVSnoncore
                     break;
             }
         }
+        /// <summary>
+        /// Najmensie cislo v poli
+        /// </summary>
         private static void NajmensieCislo()
         {
             int NajmensieCislo = Program.Numbers[0];
@@ -46,7 +49,9 @@ namespace A1NVSnoncore
                 }
             }
             Console.WriteLine("Najmensi prvok je " + NajmensieCislo + " s poziciou " + Index);
-        }
+        }/// <summary>
+        /// Najvacsie cislo v poli
+        /// </summary>
         private static void NajvacsieCislo()
         {
             int NajvacsieCislo = Program.Numbers[0];
@@ -61,6 +66,9 @@ namespace A1NVSnoncore
             }
             Console.WriteLine("Najvacsi prvok je " + NajvacsieCislo + " s poziciou " + Index);
         }
+        /// <summary>
+        /// Zoradovaci algoritmus Bubble
+        /// </summary>
         private static void PrvyAlgo()
         {   
             for(int i = 0; i < Program.Numbers.Count - 1; i++)
