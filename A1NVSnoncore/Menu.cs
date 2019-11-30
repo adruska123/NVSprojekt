@@ -28,6 +28,7 @@ namespace A1NVSnoncore
                     PrvyAlgo();
                     break;
                 case 4:
+                    DruhyAlgo();
                     break;
                 case 5:
                     break;
@@ -84,6 +85,28 @@ namespace A1NVSnoncore
                 }
             }
             for(int i = 0; i < Program.Numbers.Count; i++)
+            {
+                Console.Write(Program.Numbers[i] + " ");
+            }
+        }
+        /// <summary>
+        /// Zoradovaci algoritmus Selection
+        /// </summary>
+        private static void DruhyAlgo()
+        {
+            for(int i = 0; i < Program.Numbers.Count - 1; i++)
+            {
+                int min = i;
+                for(int j = i + 1; j < Program.Numbers.Count; j++)
+                {
+                    if (Program.Numbers[j] < Program.Numbers[min])
+                        min = j;
+                }
+                int temp = Program.Numbers[i];
+                Program.Numbers[i] = Program.Numbers[min];
+                Program.Numbers[min] = temp;
+            }
+            for (int i = 0; i < Program.Numbers.Count; i++)
             {
                 Console.Write(Program.Numbers[i] + " ");
             }
