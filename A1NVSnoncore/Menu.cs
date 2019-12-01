@@ -31,6 +31,7 @@ namespace A1NVSnoncore
                     DruhyAlgo();
                     break;
                 case 5:
+                    TretiAlgo();
                     break;
             }
         }
@@ -105,6 +106,26 @@ namespace A1NVSnoncore
                 int temp = Program.Numbers[i];
                 Program.Numbers[i] = Program.Numbers[min];
                 Program.Numbers[min] = temp;
+            }
+            for (int i = 0; i < Program.Numbers.Count; i++)
+            {
+                Console.Write(Program.Numbers[i] + " ");
+            }
+        }
+        /// <summary>
+        /// Zoradovaci algoritmus Insertion
+        /// </summary>
+        private static void TretiAlgo()
+        {
+            for(int i = 1; i < Program.Numbers.Count; i++)
+            {
+                int j = i - 1;
+                while (j >= 0 && Program.Numbers[j] > Program.Numbers[i])
+                {
+                    Program.Numbers[j + 1] = Program.Numbers[j]; 
+                    j = j - 1; 
+                }
+                Program.Numbers[j + 1] = Program.Numbers[i];
             }
             for (int i = 0; i < Program.Numbers.Count; i++)
             {
