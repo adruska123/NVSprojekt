@@ -119,13 +119,14 @@ namespace A1NVSnoncore
         {
             for(int i = 1; i < Program.Numbers.Count; i++)
             {
+                int k = Program.Numbers[i];
                 int j = i - 1;
-                while (j >= 0 && Program.Numbers[j] > Program.Numbers[i])
+                while (j >= 0 && Program.Numbers[j] > k)
                 {
                     Program.Numbers[j + 1] = Program.Numbers[j]; 
                     j = j - 1; 
                 }
-                Program.Numbers[j + 1] = Program.Numbers[i];
+                Program.Numbers[j + 1] = k;
             }
             for (int i = 0; i < Program.Numbers.Count; i++)
             {
