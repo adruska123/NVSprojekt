@@ -6,6 +6,9 @@ namespace A1NVSnoncore
 {
     class Menu
     {
+        /// <summary>
+        /// Metóda, ktorá vypíše na konzolu menu a spracuje uživateľský vstup
+        /// </summary>
         public static void VypisMenu()
         {
             Console.WriteLine("1)Informacie o najmensom prvku.");
@@ -16,6 +19,9 @@ namespace A1NVSnoncore
 
             Console.Write("Vasa volba: ");
             int volba = Convert.ToInt32(Console.ReadLine());
+            /**
+             * Volanie príslušnej metódy na základe uživateľského vstupu
+             */
             switch (volba)
             {
                 case 1:
@@ -36,7 +42,7 @@ namespace A1NVSnoncore
             }
         }
         /// <summary>
-        /// Najmensie cislo v poli
+        /// Metóda, ktorá nájde najmenšie číslo v poli a vypíše jeho hodnotu a pozíciu na konzolu
         /// </summary>
         private static void NajmensieCislo()
         {
@@ -51,9 +57,10 @@ namespace A1NVSnoncore
                 }
             }
             Console.WriteLine("Najmensi prvok je " + NajmensieCislo + " s poziciou " + Index);
-        }/// <summary>
-        /// Najvacsie cislo v poli
-        /// </summary>
+        }
+        /// <summary>
+         /// Metóda, ktorá nájde najväčšie číslo v poli a vypíše jeho hodnotu a pozíciu na konzolu
+         /// </summary>
         private static void NajvacsieCislo()
         {
             int NajvacsieCislo = Program.Numbers[0];
@@ -69,7 +76,7 @@ namespace A1NVSnoncore
             Console.WriteLine("Najvacsi prvok je " + NajvacsieCislo + " s poziciou " + Index);
         }
         /// <summary>
-        /// Zoradovaci algoritmus Bubble
+        /// Metóda, ktorá zoradí pole čísel podľa algoritmu Bubble
         /// </summary>
         private static void PrvyAlgo()
         {   
@@ -91,7 +98,7 @@ namespace A1NVSnoncore
             }
         }
         /// <summary>
-        /// Zoradovaci algoritmus Selection
+        /// Metóda, ktorá zoradí pole čísel podľa algoritmu Selection
         /// </summary>
         private static void DruhyAlgo()
         {
@@ -113,7 +120,7 @@ namespace A1NVSnoncore
             }
         }
         /// <summary>
-        /// Zoradovaci algoritmus Insertion
+        /// Metóda, ktorá zoradí pole čísel podľa algoritmu Insertion
         /// </summary>
         private static void TretiAlgo()
         {

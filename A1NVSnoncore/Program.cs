@@ -8,11 +8,20 @@ namespace A1NVSnoncore
 {
     class Program
     {
+        /// <summary>
+        /// Dynamické pole čísel
+        /// </summary>
         public static List<int> Numbers = new List<int>();
-
-        static void Main(string[] args)
+        /// <summary>
+        /// Metóda, ktorá spracuje vstupné parametre
+        /// </summary>
+        /// <param name="args"></param>
+        public static void SpracovanieVstupu(string[] args)
         {
-
+            /**
+             * V prípade, že niesú zadané žiadne vstupné parametre, 
+             * program vygeneruje 20 pseudonáhodných čísel v intervale od 0 do 100
+             */
             if (args.Length == 0)
             {
                 RandomNumber rn = new RandomNumber();
@@ -21,12 +30,18 @@ namespace A1NVSnoncore
                     Numbers.Add(rn.RandomInt(0, 100));
                 }
             }
-            else if (!(int.TryParse(args[0], out int yeff)))
+            /**
+             * V prípade, že vstupný parameter nieje číslo
+             * program overí či sa jedná o cestu k súboru.
+             * Ak áno tak prečíta všetky čísla v súbore
+             * Ak nie tak program vypíše chybové hlásenie
+             */
+            else if (!(int.TryParse(args[0], out int t)))
             {
                 string argument = args[0];
                 if (argument[1] != ':')
                 {
-                    Console.WriteLine("Nespravny vstup.");
+                    Console.WriteLine("Nesprávny vstup.");
                 }
                 else
                 {
@@ -38,6 +53,10 @@ namespace A1NVSnoncore
                     }
                 }
             }
+            /**
+             * V prípade, že sú zadané vstupné parametre a nejedná sa o cestu k súboru
+             * program vloží vstupné parametre do poľa Numbers
+             */
             else
             {
                 for (int i = 0; i < args.Length; i++)
@@ -46,11 +65,18 @@ namespace A1NVSnoncore
                     Numbers.Add(Convert.ToInt32(stringNumber));
                 }
             }
-
-
+        }
+        static void Main(string[] args)
+        {
+            /**
+            * Volanie metódy SpracovanieVstupu
+            */
+            SpracovanieVstupu(args);
+            /**
+             * Volanie metódy VypisMenu
+             */
             Menu.VypisMenu();
             Console.ReadKey();
-
         }
     }
 }
