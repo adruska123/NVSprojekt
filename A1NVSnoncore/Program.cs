@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace A1NVSnoncore
 {
+    /// <summary>
+    /// Trieda 
+    /// </summary>
     class Program
     {
         /// <summary>
