@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace A1NVSnoncore
 {
     /// <summary>
-    /// Trieda 
+    /// Trieda, v ktorej sa spracujú vstupné argumenty
     /// </summary>
     class Program
     {
