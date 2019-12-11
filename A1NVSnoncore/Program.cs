@@ -1,4 +1,26 @@
-﻿using System;
+﻿/*!
+* \mainpage Minimax
+* MINIMAX
+*   
+*   VSTUP
+* - Program musí umět přijímat libovolně veliké pole celočíselných hodnot zadané
+*   jako parametry, případně uložené v textovém souboru. V případě spuštění bez
+*   parametru se využije generátor pseudonáhodných čísel, který vygeneruje 20
+*   prvků.
+*   
+*   PŘÍKLAD SPUŠTĚNÍ
+* - minimax.exe 8763 35 765 1 -90
+* - minimax.exe soubor-s-cisly.txt
+* - minimax.exe
+* 
+*   VÝSTUP
+* - Informace o nejmenším prvku (hodnota a pozice v poli)
+* - Informace o největším prvku (hodnota a pozice v poli)
+* - Seřazené pole (program musí mít implementaci pro tři různé algoritmy řazení a
+*   uživatel bude v průběhu programu dotázán na volbu algoritmu).
+*  \authors Marcel Štrba, Adam Druska
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

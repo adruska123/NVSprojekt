@@ -4,6 +4,9 @@ using A1NVSnoncore;
 
 namespace UnitTesty
 {
+    /// <summary>
+    /// Unittest, ktorý kontroluje rozsah generovania
+    /// </summary>
     [TestClass]
     public class UnitTest1
     {

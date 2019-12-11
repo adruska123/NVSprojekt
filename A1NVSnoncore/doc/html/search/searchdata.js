@@ -5,7 +5,8 @@ var indexSectionsWithContent =
   2: "a",
   3: "amprs",
   4: "rsv",
-  5: "n"
+  5: "n",
+  6: "m"
 };
 
 var indexSectionNames =
@@ -15,16 +16,18 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "variables"
+  5: "variables",
+  6: "pages"
 };
 
 var indexSectionLabels =
 {
-  0: "Vše",
-  1: "Třídy",
-  2: "Prostory jmen",
-  3: "Soubory",
-  4: "Funkce",
-  5: "Proměnné"
+  0: "Všetko",
+  1: "Triedy",
+  2: "Priestory mien",
+  3: "Súbory",
+  4: "Funkcie",
+  5: "Premenné",
+  6: "Stránky"
 };
 

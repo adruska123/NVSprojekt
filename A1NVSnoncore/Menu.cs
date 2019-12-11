@@ -5,7 +5,7 @@ using System.Text;
 namespace A1NVSnoncore
 {
     /// <summary>
-    /// Trieda, ktorá vypíše na konzolu 5 možností
+    /// Trieda, ktorá vypíše na konzolu menu, uživateľ má na výber z 5 možností
     /// </summary>
     class Menu
     {

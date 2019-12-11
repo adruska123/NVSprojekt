@@ -21,15 +21,15 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Hlavní stránka",url:"index.html"},
+{text:"Hlavná stránka",url:"index.html"},
 {text:"Balíky",url:"namespaces.html",children:[
 {text:"Balíky",url:"namespaces.html"}]},
-{text:"Třídy",url:"annotated.html",children:[
-{text:"Seznam tříd",url:"annotated.html"},
-{text:"Rejstřík tříd",url:"classes.html"},
-{text:"Seznam členů tříd",url:"functions.html",children:[
-{text:"Vše",url:"functions.html"},
-{text:"Funkce",url:"functions_func.html"},
-{text:"Proměnné",url:"functions_vars.html"}]}]},
-{text:"Soubory",url:"files.html",children:[
-{text:"Seznam souborů",url:"files.html"}]}]}
+{text:"Triedy",url:"annotated.html",children:[
+{text:"Zoznam tried",url:"annotated.html"},
+{text:"Register tried",url:"classes.html"},
+{text:"Zoznam členov tried",url:"functions.html",children:[
+{text:"Všetko",url:"functions.html"},
+{text:"Funkcie",url:"functions_func.html"},
+{text:"Premenné",url:"functions_vars.html"}]}]},
+{text:"Súbory",url:"files.html",children:[
+{text:"Zoznam súborov",url:"files.html"}]}]}
