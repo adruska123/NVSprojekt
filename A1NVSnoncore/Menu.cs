@@ -42,6 +42,9 @@ namespace A1NVSnoncore
                 case 5:
                     TretiAlgo();
                     break;
+                default:
+                    Console.WriteLine("Zadali ste zle cislo.");
+                    break;
             }
         }
         /// <summary>
