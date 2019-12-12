@@ -7,8 +7,9 @@ namespace A1NVSnoncore
     /// <summary>
     /// Trieda, ktorá vypíše na konzolu menu, uživateľ má na výber z 5 možností
     /// </summary>
-    class Menu
+    public class Menu
     {
+        static bool testovanie = true;
         /// <summary>
         /// Metóda, ktorá vypíše na konzolu menu a spracuje uživateľský vstup
         /// </summary>
@@ -62,6 +63,17 @@ namespace A1NVSnoncore
                     Index = i;
                 }
             }
+
+            //test
+            if(NajmensieCislo == 56 && testovanie)
+            {
+                Console.WriteLine("Test prebehol uspesne");
+            }
+            else if (testovanie)
+            {
+                Console.WriteLine("Test neprebehol uspesne");           
+            }
+
             Console.WriteLine("Najmensi prvok je " + NajmensieCislo + " s poziciou " + Index);
         }
         /// <summary>
@@ -79,6 +91,17 @@ namespace A1NVSnoncore
                     Index = i;
                 }
             }
+
+            //test
+            if (NajvacsieCislo == 745 && testovanie)
+            {
+                Console.WriteLine("Test prebehol uspesne");
+            }
+            else if(testovanie)
+            {
+                Console.WriteLine("Test neprebehol uspesne");
+            }
+
             Console.WriteLine("Najvacsi prvok je " + NajvacsieCislo + " s poziciou " + Index);
         }
         /// <summary>
@@ -98,7 +121,18 @@ namespace A1NVSnoncore
                     }
                 }
             }
-            for(int i = 0; i < Program.Numbers.Count; i++)
+
+            //test
+            if (Program.Numbers[0] == 56 && Program.Numbers[5] == 745 && testovanie)
+            {
+                Console.WriteLine("Test prebehol uspesne");
+            }
+            else if (testovanie)
+            {
+                Console.WriteLine("Test neprebehol uspesne");
+            }
+
+            for (int i = 0; i < Program.Numbers.Count; i++)
             {
                 Console.Write(Program.Numbers[i] + " ");
             }
@@ -120,6 +154,17 @@ namespace A1NVSnoncore
                 Program.Numbers[i] = Program.Numbers[min];
                 Program.Numbers[min] = temp;
             }
+
+            //test
+            if (Program.Numbers[0] == 56 && Program.Numbers[5] == 745 && testovanie)
+            {
+                Console.WriteLine("Test prebehol uspesne");
+            }
+            else if (testovanie)
+            {
+                Console.WriteLine("Test neprebehol uspesne");
+            }
+
             for (int i = 0; i < Program.Numbers.Count; i++)
             {
                 Console.Write(Program.Numbers[i] + " ");
@@ -137,10 +182,21 @@ namespace A1NVSnoncore
                 while (j >= 0 && Program.Numbers[j] > k)
                 {
                     Program.Numbers[j + 1] = Program.Numbers[j]; 
-                    j = j - 1; 
+                    j--; 
                 }
                 Program.Numbers[j + 1] = k;
             }
+
+            //test
+            if (Program.Numbers[0] == 56 && Program.Numbers[5] == 745 && testovanie)
+            {
+                Console.WriteLine("Test prebehol uspesne");
+            }
+            else if (testovanie)
+            {
+                Console.WriteLine("Test neprebehol uspesne");
+            }
+
             for (int i = 0; i < Program.Numbers.Count; i++)
             {
                 Console.Write(Program.Numbers[i] + " ");

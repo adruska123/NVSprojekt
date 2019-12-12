@@ -28,6 +28,7 @@ using System.Threading.Tasks;
 
 namespace A1NVSnoncore
 {
+    
     /// <summary>
     /// Trieda, v ktorej sa spracujú vstupné argumenty
     /// </summary>

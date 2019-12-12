@@ -93,7 +93,7 @@ Statické verejné atribúty</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailný popis</h2>
 <div class="textblock"><p>Trieda, v ktorej sa spracujú vstupné argumenty </p>
 
-<p class="definition">Definícia je uvedená na riadku <a class="el" href="_program_8cs_source.html#l00034">34</a> v súbore <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
+<p class="definition">Definícia je uvedená na riadku <a class="el" href="_program_8cs_source.html#l00035">35</a> v súbore <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
 </div><h2 class="groupheader">Dokumentácia k metódam</h2>
 <a id="a80ac41fb941baeaad257e37451313008"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80ac41fb941baeaad257e37451313008">&#9670;&nbsp;</a></span>SpracovanieVstupu()</h2>
@@ -130,42 +130,42 @@ Statické verejné atribúty</h2></td></tr>
 <p>V prípade, že vstupný parameter nieje číslo program overí či sa jedná o cestu k súboru. Ak áno tak prečíta všetky čísla v súbore Ak nie tak program vypíše chybové hlásenie</p>
 <p>V prípade, že sú zadané vstupné parametre a nejedná sa o cestu k súboru program vloží vstupné parametre do poľa Numbers</p>
 
-<p class="definition">Definícia je uvedená na riadku <a class="el" href="_program_8cs_source.html#l00044">44</a> v súbore <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (args.Length == 0)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                RandomNumber rn = <span class="keyword">new</span> RandomNumber();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 20; i++)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <a class="code" href="class_a1_n_v_snoncore_1_1_program.html#a05dec6d131ff7e0457638bbad65f5f81">Numbers</a>.Add(rn.RandomInt(0, 100));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!(<span class="keywordtype">int</span>.TryParse(args[0], out <span class="keywordtype">int</span> t)))</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordtype">string</span> argument = args[0];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">if</span> (argument[1] != <span class="charliteral">&#39;:&#39;</span>)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    Console.WriteLine(<span class="stringliteral">&quot;Nesprávny vstup.&quot;</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <span class="keywordtype">string</span> suborCisla = System.IO.File.ReadAllText(args[0]);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    <span class="keywordtype">string</span>[] cisla = suborCisla.Split(<span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordflow">foreach</span> (<span class="keywordtype">string</span> stringNumber <span class="keywordflow">in</span> cisla)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <a class="code" href="class_a1_n_v_snoncore_1_1_program.html#a05dec6d131ff7e0457638bbad65f5f81">Numbers</a>.Add(Convert.ToInt32(stringNumber));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; args.Length; i++)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    <span class="keywordtype">string</span> stringNumber = args[i];</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <a class="code" href="class_a1_n_v_snoncore_1_1_program.html#a05dec6d131ff7e0457638bbad65f5f81">Numbers</a>.Add(Convert.ToInt32(stringNumber));</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<p class="definition">Definícia je uvedená na riadku <a class="el" href="_program_8cs_source.html#l00045">45</a> v súbore <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span> (args.Length == 0)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                RandomNumber rn = <span class="keyword">new</span> RandomNumber();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 20; i++)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <a class="code" href="class_a1_n_v_snoncore_1_1_program.html#a05dec6d131ff7e0457638bbad65f5f81">Numbers</a>.Add(rn.RandomInt(0, 100));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!(<span class="keywordtype">int</span>.TryParse(args[0], out <span class="keywordtype">int</span> t)))</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordtype">string</span> argument = args[0];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">if</span> (argument[1] != <span class="charliteral">&#39;:&#39;</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    Console.WriteLine(<span class="stringliteral">&quot;Nesprávny vstup.&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    <span class="keywordtype">string</span> suborCisla = System.IO.File.ReadAllText(args[0]);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordtype">string</span>[] cisla = suborCisla.Split(<span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    <span class="keywordflow">foreach</span> (<span class="keywordtype">string</span> stringNumber <span class="keywordflow">in</span> cisla)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        <a class="code" href="class_a1_n_v_snoncore_1_1_program.html#a05dec6d131ff7e0457638bbad65f5f81">Numbers</a>.Add(Convert.ToInt32(stringNumber));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; args.Length; i++)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <span class="keywordtype">string</span> stringNumber = args[i];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <a class="code" href="class_a1_n_v_snoncore_1_1_program.html#a05dec6d131ff7e0457638bbad65f5f81">Numbers</a>.Add(Convert.ToInt32(stringNumber));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -192,7 +192,7 @@ Statické verejné atribúty</h2></td></tr>
 
 <p>Dynamické pole čísel </p>
 
-<p class="definition">Definícia je uvedená na riadku <a class="el" href="_program_8cs_source.html#l00039">39</a> v súbore <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
+<p class="definition">Definícia je uvedená na riadku <a class="el" href="_program_8cs_source.html#l00040">40</a> v súbore <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
 
 </div>
 </div>
@@ -200,10 +200,10 @@ Statické verejné atribúty</h2></td></tr>
 <li><a class="el" href="_program_8cs_source.html">Program.cs</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclass_a1_n_v_snoncore_1_1_program_html_a05dec6d131ff7e0457638bbad65f5f81"><div class="ttname"><a href="class_a1_n_v_snoncore_1_1_program.html#a05dec6d131ff7e0457638bbad65f5f81">A1NVSnoncore.Program.Numbers</a></div><div class="ttdeci">static List&lt; int &gt; Numbers</div><div class="ttdoc">Dynamické pole čísel</div><div class="ttdef"><b>Definition:</b> <a href="_program_8cs_source.html#l00039">Program.cs:39</a></div></div>
+<div class="ttc" id="aclass_a1_n_v_snoncore_1_1_program_html_a05dec6d131ff7e0457638bbad65f5f81"><div class="ttname"><a href="class_a1_n_v_snoncore_1_1_program.html#a05dec6d131ff7e0457638bbad65f5f81">A1NVSnoncore.Program.Numbers</a></div><div class="ttdeci">static List&lt; int &gt; Numbers</div><div class="ttdoc">Dynamické pole čísel</div><div class="ttdef"><b>Definition:</b> <a href="_program_8cs_source.html#l00040">Program.cs:40</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generované st 11. dec 2019 18.15:14 pre projekt Minimax programom &#160;<a href="http://www.doxygen.org/index.html">
+Generované št 12. dec 2019 12.39:57 pre projekt Minimax programom &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.16
 </small></address>
