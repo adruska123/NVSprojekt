@@ -93,7 +93,7 @@ namespace A1NVSnoncore
             }
 
             //test
-            if (NajvacsieCislo == 745 && testovanie)
+            if (NajvacsieCislo == 745 && testovanie) 
             {
                 Console.WriteLine("Test prebehol uspesne");
             }
